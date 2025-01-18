@@ -119,6 +119,12 @@
 		)
 	)
 	(net 0 "")
+	(net 1 "unconnected-(J1-Pad4)")
+	(net 2 "unconnected-(J1-Pad2)")
+	(net 3 "unconnected-(J1-Pad3)")
+	(net 4 "unconnected-(J1-Pad1)")
+	(net 5 "unconnected-(J1-Pad6)")
+	(net 6 "unconnected-(J1-Pad5)")
 	(footprint "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen"
 		(layer "F.Cu")
 		(uuid "426f3737-3fea-4729-9954-5e08fb84ef28")
@@ -149,7 +155,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -158,6 +164,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -170,6 +177,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -182,10 +190,12 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(path "/b72b6f4a-7489-40f2-bb90-d75ae01aa368")
+		(sheetname "Root")
 		(sheetfile "board.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_poly
@@ -273,6 +283,173 @@
 			(fill solid)
 			(layer "F.SilkS")
 			(uuid "d212dae5-b2e6-4ec6-89cf-ab9b74e16175")
+		)
+	)
+	(footprint "b160:M12-6A"
+		(layer "F.Cu")
+		(uuid "9d3859e2-7ba4-459f-913b-b226767b9b21")
+		(at 154.21 96.55)
+		(property "Reference" "J1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "565b035f-c9a2-4778-8153-5bdea0c9921c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "M12"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "cecadb02-abc9-44c7-84b6-6b4f41a6b95c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "b160:M12-6A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d70b8c5-4ed0-4e6f-9a48-80aadbe28a70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d906f518-59a9-4d2c-9304-bb077f7a91a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbb03225-e0c4-4bc2-adff-3beddf0c3e24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "DIN*")
+		(path "/ac52588c-3238-439f-b999-9574082e4e53")
+		(sheetname "Root")
+		(sheetfile "board.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 0 -2.25)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "Dwgs.User")
+			(uuid "ff32b8fe-772f-4107-ae39-a17838cf8bd2")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 -3.95)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "17e6da12-b09a-4a6d-b63b-0d9ca10ecc29")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "4a6dc32c-79a3-4d83-9743-0a3e09bca10d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at -1.25 -1.9)
+			(size 1.75 1.75)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 4 "unconnected-(J1-Pad1)")
+			(pintype "passive")
+			(uuid "1ce454d1-9005-48f9-b6db-392a95f48aab")
+		)
+		(pad "2" thru_hole circle
+			(at 1.2 -1.9)
+			(size 1.75 1.75)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "unconnected-(J1-Pad2)")
+			(pintype "passive")
+			(uuid "ca9eb074-50b2-4c2c-9149-e0541dce3cd0")
+		)
+		(pad "3" thru_hole circle
+			(at 2.2 -0.3)
+			(size 1.75 1.75)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "unconnected-(J1-Pad3)")
+			(pintype "passive")
+			(uuid "54d821d1-5b8f-4ce3-b604-c2f7cae43adc")
+		)
+		(pad "4" thru_hole circle
+			(at 1.7 1.5)
+			(size 1.75 1.75)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "unconnected-(J1-Pad4)")
+			(pintype "passive")
+			(uuid "1a6762c1-a907-402d-81b9-3630a0e9f0ca")
+		)
+		(pad "5" thru_hole circle
+			(at -1.7 1.45)
+			(size 1.75 1.75)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 6 "unconnected-(J1-Pad5)")
+			(pintype "passive")
+			(uuid "ff913648-b329-4324-b6b9-8d1ef3d71532")
+		)
+		(pad "6" thru_hole circle
+			(at -2.25 -0.3)
+			(size 1.75 1.75)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 5 "unconnected-(J1-Pad6)")
+			(pintype "passive")
+			(uuid "e72fca72-63ac-4e9a-84b9-6de1e8d7fe74")
 		)
 	)
 	(gr_line
